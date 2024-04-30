@@ -46,9 +46,8 @@ body * {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  padding: 24px 0;
 }
-
-.card__item {}
 
 .card__link {
   display: flex;
@@ -70,4 +69,26 @@ body * {
 .card__link:hover {
   background: rgba(255, 255, 255, 0.05);
   border: 1.5px solid white;
+}
+
+/* ------------------ ICONS ------------------  */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+.social-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: background-color 0.2s;
+  border-radius: 50%;
+}
+
+.social-links__link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
