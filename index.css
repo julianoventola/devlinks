@@ -30,8 +30,7 @@ body * {
 .profile__image {
   width: 112px;
   border-radius: 50%;
-  border: 2px solid rgb(249, 216, 216);
-  filter: grayscale(1);
+  border: 2px solid rgba(255, 255, 0, 0.8);
 }
 
 .profile__tag {
@@ -39,4 +38,36 @@ body * {
   font-size: 16px;
   line-height: 24px;
   margin-top: 8px;
+}
+
+/* ------------------ CARDS ------------------  */
+.card {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.card__item {}
+
+.card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  transition: background 0.2s;
+}
+
+.card__link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
 }
