@@ -11,9 +11,10 @@
   --stroke-color-bg: rgba(255, 255, 255, 0.1);
   --card-link-color: rgba(255, 255, 255, 0.05);
   --highlight-color-icon: rgba(255, 255, 255, 0.2);
-  --switch-bg-light-dark-theme: url('./assets/sun.svg');
+  --switch-bg-light-dark-theme: url('./assets/moon-stars.svg');
   --switch-span-color: rgba(255, 255, 255, 0.1);
   --switch-span-border-color: rgba(255, 255, 255, 0.5);
+  --avatar-border-color: rgba(255, 255, 0, 0.8);
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  transition: all 1s;
 }
 
 body * {
@@ -35,15 +37,17 @@ body * {
   --stroke-color-bg: rgba(0, 0, 0, 0.05);
   --card-link-color: rgba(0, 0, 0, 0.2);
   --highlight-color-icon: rgba(0, 0, 0, 0.1);
-  --switch-bg-light-dark-theme: url('./assets/moon-stars.svg');
+  --switch-bg-light-dark-theme: url('./assets/sun.svg');
   --switch-span-color: rgba(0, 0, 0, 0.1);
   --switch-span-border-color: rgba(0, 0, 0, 0.5);
+  --avatar-border-color: rgba(0, 0, 0, 0.8);
 }
 
 .container {
-  width: 360px;
-  margin: auto;
-  margin-top: 56px;
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0;
+  padding: 0 24px;
 }
 
 .profile {
@@ -54,7 +58,7 @@ body * {
 .profile__image {
   width: 112px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 0, 0.8);
+  border: 2px solid var(--avatar-border-color);
 }
 
 .profile__tag {
