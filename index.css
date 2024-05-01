@@ -23,6 +23,7 @@ body {
   background-position: top center;
   background-size: cover;
   transition: all 1s;
+  height: 100vh;
 }
 
 body * {
@@ -173,4 +174,15 @@ body * {
 
 .footer__text {
   font-size: 14px;
+}
+
+
+@media (min-width:700px) {
+  :root {
+    --bg-image: url('./assets/bg-desktop.jpg');
+  }
+
+  .light {
+    --bg-image: url('./assets/bg-desktop-light.jpg');
+  }
 }
